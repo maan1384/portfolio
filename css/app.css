@@ -1,4 +1,7 @@
-.cell{
-  background: red;
-  border: 1px solid green;
-}
+/**{outline: 1px solid red}*/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab');
+
+body{ font-family: 'Roboto Slab', serif;}
+h1, h2, h3, h4, h4, h6 {font-family: 'Nunito', sans-serif;}
+h2 {font-size: 1.35rem;}
+p{line-height: 1.25em;}
