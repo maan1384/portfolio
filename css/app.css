@@ -1,7 +1,82 @@
 /**{outline: 1px solid red}*/
-@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab|Audiowide');
 
-body{ font-family: 'Roboto Slab', serif;}
-h1, h2, h3, h4, h4, h6 {font-family: 'Nunito', sans-serif;}
-h2 {font-size: 1.35rem;}
-p{line-height: 1.25em;}
+body.grad {
+  font-family: 'Roboto Slab', serif;
+  background: repeating-linear-gradient(90deg, black, darkgreen, green, darkgreen, black);
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 4.7em;
+  font-family: 'Audiowide', cursive;
+  text-shadow: 5px 9px black;
+}
+h2, h3 {
+  color: white;
+  font-size: 1.35rem;
+  padding-left: 10px;
+  text-decoration: underline;
+  font-family: 'Nunito', sans-serif;
+}
+h4 {
+  color: white;
+  font-size: 1.8em;
+  font-family: 'Nunito', sans-serif;
+}
+p{
+  color: white;
+  text-indent: 20px;
+  font-size: 1em;
+  font-family: 'Nunito', sans-serif;
+
+}
+p.cell {
+  padding-top: 20px;
+}
+/*images*/
+.grow {
+  transition: all .9s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  cursor: pointer;
+}
+.grow:hover {
+  transform: scale(2.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Navigation Bar*/
+nav{
+  margin: 20px;
+  font-family: 'Nunito', sans-serif;
+  padding-bottom: 50px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  }
+nav li{
+  display: inline;
+  font-weight: 500;
+  }
+nav a:link, nav a:visited{
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+  }
+nav a:hover{
+  text-decoration:none;
+  color: yellow;
+  }
+
+nav a.active {
+  background-color: black;
+}
